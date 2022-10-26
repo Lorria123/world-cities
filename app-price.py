@@ -32,7 +32,7 @@ df = df[df.income_level == income_filter]
 st.map(df)
 
 st.subheader('Price Details:')
-st.write(df['housing_median_age','median_income','median_house_value','ocean_proximity','income_level'])
+st.write(df['housing_median_age','median_income','median_house_value','ocean_proximity'])
 
 st.subheader('The Median House Value:')
 fig,ax = plt.subplots(figsize=(20,5))
