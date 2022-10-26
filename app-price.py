@@ -35,6 +35,5 @@ st.write(df['ocean_proximity','median_house_value','median_income','housing_medi
 
 st.subheader('The Median House Value:')
 fig,ax = plt.subplots(figsize=(20,5))
-median_value = df.median_house_value
-median_value.plot.hist(bins=30)
+df.median_house_value.plot.hist(bins=30,ax=ax)
 st.pyplot(fig)
